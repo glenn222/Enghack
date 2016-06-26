@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html ng-app="RemindMeApp" class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Foundation Starter Template</title>
+      
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+<body ng-controller="HomeCtrl">
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>{{ vm.text }}, Welcome to EngHack! </h1>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="row">
+        <div class="small-6 large-centered columns">
+            <div class="button-group">
+                <a class="secondary button" ng-click="vm.getQuote()">View</a>
+                <a class="success button" ng-click="vm.generate()"> Generate </a>
+                <a class="warning button">Share</a>
+                <a class="alert button">Delete</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="expanded row">
+        <label> {{ vm.getQuote() }}</label>
+        <div class="small-2 columns">2 <span class="hide-for-small-only">columns</span></div>
+        <div class="small-10 columns">10 columns</div>
+    </div>
+    <div class="expanded row">
+        <div class="small-3 columns">3 columns</div>
+        <div class="small-9 columns">9 columns</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns">1</div>
+        <div class="large-11 columns">11</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns">1</div>
+        <div class="large-10 large-offset-1 columns">10, offset 1</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns">1</div>
+        <div class="large-9 large-offset-2 columns">9, offset 2</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns">1</div>
+        <div class="large-8 large-offset-3 columns">8, offset 3</div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+
+    <!--<script src="http://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/HomeController.js"></script>
+  </body>
+</html>
