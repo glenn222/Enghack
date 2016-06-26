@@ -1,0 +1,3 @@
+function getMeme() {
+    alert("Hi");
+}
